@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.200T">
+    <devices>
+        <dev id="7DA3EC49-1CFF-4d70-9941-F0BE3BFB05CA" name="FRSW1" poe="0" model="FRSW" settings="0-103-2-301;0-102-1-201;" system_mac="" com_port="0" bootmode="0" cx="798.000000" cy="376.000000" edit_left="825" edit_top="430">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Serial" interfacename="Serial" count="16" />
+            </slot>
+        </dev>
+        <dev id="696AF053-3486-40fe-A4F9-86B335E4BB4D" name="R2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-78-01-19" com_port="2001" bootmode="0" cx="1085.000000" cy="180.000000" edit_left="1112" edit_top="234">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="3" type="521" />
+        </dev>
+        <dev id="8483B6F5-F850-406b-B0B7-87B716EFCF8A" name="R3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-A3-2D-89" com_port="2002" bootmode="0" cx="1104.000000" cy="583.000000" edit_left="1131" edit_top="637">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="3" type="521" />
+        </dev>
+        <dev id="D30B370E-72D5-4670-BDDE-5C29A4277F84" name="R1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-90-5D-44" com_port="2000" bootmode="0" cx="440.000000" cy="375.000000" edit_left="467" edit_top="428">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="3" type="521" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="D30B370E-72D5-4670-BDDE-5C29A4277F84" destDeviceID="7DA3EC49-1CFF-4d70-9941-F0BE3BFB05CA">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="510.183594" srcBoundRect_Y="402.120636" srcOffset_X="-7.000000" srcOffset_Y="26.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="781.816406" tarBoundRect_Y="402.879364" tarOffset_X="-52.000000" tarOffset_Y="32.000000" />
+        </line>
+        <line srcDeviceID="7DA3EC49-1CFF-4d70-9941-F0BE3BFB05CA" destDeviceID="696AF053-3486-40fe-A4F9-86B335E4BB4D">
+            <interfacePair lineName="Serial" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="860.661194" srcBoundRect_Y="378.646027" srcOffset_X="-50.000000" srcOffset_Y="-43.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="1076.338745" tarBoundRect_Y="231.353989" tarOffset_X="-80.000000" tarOffset_Y="-37.000000" />
+        </line>
+        <line srcDeviceID="7DA3EC49-1CFF-4d70-9941-F0BE3BFB05CA" destDeviceID="8483B6F5-F850-406b-B0B7-87B716EFCF8A">
+            <interfacePair lineName="Serial" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="860.768372" srcBoundRect_Y="427.196259" srcOffset_X="51.000000" srcOffset_Y="2.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="1095.231567" tarBoundRect_Y="585.803711" tarOffset_X="-1.000000" tarOffset_Y="-35.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>
