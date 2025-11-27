@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.200T">
+    <devices>
+        <dev id="8F9D44A9-051B-4073-AE17-B051D84AD2E7" name="PC2" poe="0" model="PC" settings=" -simpc_ip 0.0.0.0  -simpc_mask 0.0.0.0  -simpc_gateway 0.0.0.0  -simpc_mac 54-89-98-1A-3A-DA  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-1A-3A-DA" com_port="0" bootmode="0" cx="1161.000000" cy="495.000000" edit_left="1188" edit_top="549">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="77089E34-9228-4ba5-8130-B1D94697E0FB" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.101.10  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.10.1  -simpc_mac 54-89-98-84-64-5F  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-84-64-5F" com_port="0" bootmode="0" cx="588.000000" cy="475.000000" edit_left="615" edit_top="529">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="AC0D4D45-1365-424e-88F8-F36E51E76C83" name="R1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-B7-0D-43" com_port="2000" bootmode="0" cx="737.000000" cy="286.000000" edit_left="764" edit_top="340">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+        <dev id="A604D06B-830B-43d5-B959-0EF5ED766537" name="R3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-B1-43-F9" com_port="2001" bootmode="0" cx="1024.000000" cy="288.000000" edit_left="1051" edit_top="342">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+        <dev id="F21787ED-BCD1-493e-B140-98534D7AEABC" name="R2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-06-71-97" com_port="2002" bootmode="0" cx="889.000000" cy="115.000000" edit_left="916" edit_top="169">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="0" type="521" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="77089E34-9228-4ba5-8130-B1D94697E0FB" destDeviceID="AC0D4D45-1365-424e-88F8-F36E51E76C83">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="641.735291" srcBoundRect_Y="468.087433" srcOffset_X="-140.000000" srcOffset_Y="-25.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="737.264709" tarBoundRect_Y="346.912567" tarOffset_X="-95.000000" tarOffset_Y="-16.000000" />
+        </line>
+        <line srcDeviceID="8F9D44A9-051B-4073-AE17-B051D84AD2E7" destDeviceID="A604D06B-830B-43d5-B959-0EF5ED766537">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="1164.166504" srcBoundRect_Y="485.988831" srcOffset_X="41.000000" srcOffset_Y="-12.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="1074.833496" tarBoundRect_Y="351.011169" tarOffset_X="33.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="AC0D4D45-1365-424e-88F8-F36E51E76C83" destDeviceID="A604D06B-830B-43d5-B959-0EF5ED766537">
+            <interfacePair lineName="Serial" srcIndex="4" srcBoundRectIsMoved="1" srcBoundRect_X="807.182739" srcBoundRect_Y="313.300934" srcOffset_X="-13.000000" srcOffset_Y="36.000000" tarIndex="4" tarBoundRectIsMoved="1" tarBoundRect_X="1007.817261" tarBoundRect_Y="314.699066" tarOffset_X="-41.000000" tarOffset_Y="36.000000" />
+        </line>
+        <line srcDeviceID="AC0D4D45-1365-424e-88F8-F36E51E76C83" destDeviceID="F21787ED-BCD1-493e-B140-98534D7AEABC">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="792.689758" srcBoundRect_Y="280.724060" srcOffset_X="-90.000000" srcOffset_Y="-43.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="887.310242" tarBoundRect_Y="174.275955" tarOffset_X="-106.000000" tarOffset_Y="-35.000000" />
+        </line>
+        <line srcDeviceID="F21787ED-BCD1-493e-B140-98534D7AEABC" destDeviceID="A604D06B-830B-43d5-B959-0EF5ED766537">
+            <interfacePair lineName="Serial" srcIndex="4" srcBoundRectIsMoved="1" srcBoundRect_X="942.566711" srcBoundRect_Y="176.044769" srcOffset_X="47.000000" srcOffset_Y="-44.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="1024.433228" tarBoundRect_Y="280.955231" tarOffset_X="33.000000" tarOffset_Y="-27.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>
